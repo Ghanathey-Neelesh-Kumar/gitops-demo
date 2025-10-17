@@ -10,4 +10,5 @@ spec:
     - protocol: TCP
       port: 6379
       targetPort: 6379
-  type: ClusterIP
+      nodePort: 30379    # optional fixed NodePort (must be between 30000–32767)
+  type: NodePort
